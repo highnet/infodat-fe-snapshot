@@ -1,0 +1,2 @@
+/* @copyright Stadt Wien - Wiener Melange 200 */
+import{s as t}from"../../lit-element-8d7b5fe2.js";import"../../lit-html-34d0b6a8.js";class e extends t{static properties={align:{type:String,reflect:!0},full:{type:Boolean,reflect:!0},start:{type:Boolean,reflect:!0},clean:{type:Boolean,reflect:!0}};constructor(){super(),this.align=void 0,this.full=!1,this.start=!1,this.clean=!1}createRenderRoot(){return this}}customElements.define("wm-cta",e);const l="wm-cta";export{e as CTA,l as tagName};

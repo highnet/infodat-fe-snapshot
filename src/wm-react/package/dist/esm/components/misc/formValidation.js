@@ -1,0 +1,2 @@
+/* @copyright Stadt Wien - Wiener Melange 200 */
+function r(r,{value:e,required:i,pattern:t,validator:n,errormessage:a}){if(!(i||e&&""!==e.trim()))return"";if(i&&(!e||""===e.trim()))return a||"This field is required";if(t&&e)try{if(!new RegExp(t).test(e))return a||"Invalid format"}catch(r){console.warn("Invalid RegExp pattern:",t)}if(n&&"function"==typeof n){const r=n(e);if(r)return a||r}return r?.validity&&!r.validity.valid?a||r.validationMessage:""}export{r as validateInput};

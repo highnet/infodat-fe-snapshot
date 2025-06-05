@@ -1,0 +1,2 @@
+/* @copyright Stadt Wien - Wiener Melange 200 */
+import{s as t}from"../../lit-element-8d7b5fe2.js";import{x as e}from"../../lit-html-34d0b6a8.js";class s extends t{static properties={highlight:{type:String,reflect:!0},type:{type:String,reflect:!0},contentsize:{type:String,reflect:!0}};constructor(){super(),this.highlight=void 0,this.type=void 0,this.contentsize="full"}connectedCallback(){super.connectedCallback()}render(){return e` <slot></slot> `}}customElements.get("wm-section")||customElements.define("wm-section",s);const i="wm-section";export{s as Section,i as tagName};

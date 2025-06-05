@@ -1,0 +1,2 @@
+/* @copyright Stadt Wien - Wiener Melange 200 */
+import{s as t}from"../../lit-element-8d7b5fe2.js";import"../../lit-html-34d0b6a8.js";class e extends t{static properties={color:{type:String,reflect:!0},type:{type:String,reflect:!0}};constructor(){super(),this.color="nebelgrau-light",this.type=void 0}createRenderRoot(){return this}}customElements.define("wm-highlight",e);const r="wm-highlight";export{e as Highlight,r as tagName};

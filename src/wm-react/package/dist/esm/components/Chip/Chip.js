@@ -1,0 +1,2 @@
+/* @copyright Stadt Wien - Wiener Melange 200 */
+import{s as e}from"../../lit-element-8d7b5fe2.js";import{x as t}from"../../lit-html-34d0b6a8.js";class r extends e{static properties={color:{type:String,reflect:!0},size:{type:String,reflect:!0}};constructor(){super(),this.color="nebelgrau",this.size="m"}connectedCallback(){super.connectedCallback()}render(){return t`<slot></slot>`}}customElements.define("wm-chip",r);const s="wm-chip";export{r as Chip,s as tagName};

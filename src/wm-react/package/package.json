@@ -1,0 +1,37 @@
+{
+  "name": "wm-react",
+  "version": "2.0.0",
+  "description": "",
+  "main": "./dist/js/bundle.min.js",
+  "types": "./dist/types.d.ts",
+  "scripts": {
+    "build": "npm i && node ../build.mjs && npm run gen:types && npm pack",
+    "gen:types": "npm run gen:jsx-and-react",
+    "gen:jsx-and-react": "npm run cem:analyze && node createReactTypings.mjs",
+    "cem:analyze": "cem analyze"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.4",
+    "custom-element-jsx-integration": "^1.6.0"
+  },
+  "files": [
+    "./dist",
+    "./custom-elements.json",
+    "./README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "default": "./dist/js/bundle.min.js"
+    },
+    "./wm.woff2": "./dist/fonts/WienerMelangeVF.woff2",
+    "./styles.css": "./dist/css/wiener-melange.bundle.min.css",
+    "./assets.css": "./dist/css/assets.css",
+    "./custom-elements.json": "./custom-elements.json",
+    "./components": "./dist/js/components",
+    "./components/*": "./dist/js/components/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED"
+}

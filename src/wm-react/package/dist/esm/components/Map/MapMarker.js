@@ -1,0 +1,2 @@
+/* @copyright Stadt Wien - Wiener Melange 200 */
+import{s as t}from"../../lit-element-8d7b5fe2.js";import"../../lit-html-34d0b6a8.js";class e extends t{static properties={color:{type:String},label:{type:String},lat:{type:String},lng:{type:String},pin:{type:String}};constructor(){super(),this.color="#ff5a64",this.label="",this.lat="",this.lng="",this.pin=""}}customElements.define("wm-mapmarker",e);export{e as MapMarker};

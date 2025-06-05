@@ -1,0 +1,25 @@
+/* Relative paths are needed to ensure that the icons are properly provided in the consuming project. 
+	This works for vite. It hasn't been tested with other bundlers and might need additional consideration. 
+	Alternatively consumers could copy over the icons folder manually and provide their own implementation of the below code with their own paths.
+	E.g.:
+	:root {
+		--_details-icon: url('/icons/chevron-down.svg');
+		--_cta-icon: url('/icons/chevron-right.svg');
+	}
+	
+	Without the relative paths.
+*/
+
+:root {
+	--_details-icon: url('../icons/chevron-down.svg');
+	--_cta-icon: url('../icons/chevron-right.svg');
+	--_cta-icon-start: url('../icons/chevron-left.svg');
+	--_carousel-control-background-image-end: url('../icons/chevron-right.svg');
+	--_carousel-control-background-image-start: url('../icons/chevron-left.svg');
+	--_map-defaultPinAlt: url('../icons/pin-default.svg');
+	--wm-theme-select-icon: url('../icons/chevron-down.svg');
+	--wm-theme-interactive-summary-icon: url('../icons/chevron-down.svg');
+	--_list-link-background-image: url('../icons/chevron-right.svg');
+	--_modal-button-background-image: url('../icons/zoom.svg');
+	--wm-theme-input-checkbox-icon: url('../icons/check-light.svg');
+}
