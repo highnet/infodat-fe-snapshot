@@ -101,7 +101,7 @@ export default function AdvancedSearchForm() {
       <div className="max-w-5xl! mx-auto!">
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="bg-white p-4 w-full flex-13 ">
+            <div className="bg-white p-4 w-full flex-13">
               <div className="mb-4">
                 <div className="relative">
                   <label htmlFor="searchTerm">Suchbegriff</label>
@@ -464,7 +464,7 @@ export default function AdvancedSearchForm() {
               <h3>Vorgänge / Dokumente / Abstimmungen</h3>
             </wm-accordion-heading>
             <wm-accordion-content>
-              <div className="pb-4">
+              <div>
                 <div>
                   <div className="flex gap-4">
                     <div className="flex-1">
@@ -494,7 +494,9 @@ export default function AdvancedSearchForm() {
                     </div>
                     <div className="flex-1">
                       <div className="relative">
-                        <label htmlFor="erledigung">Erledigung (Abstimmungsergebnis)</label>
+                        <label htmlFor="erledigung">
+                          Erledigung (Abstimmungsergebnis)
+                        </label>
                         <wm-icon
                           iconid="info"
                           className="z-100 absolute top-4 -right-2 cursor-pointer bg-[#75CDE3] border-2 border-[#75CDE3] rounded-full hover:bg-white focus:bg-white"
@@ -516,7 +518,9 @@ export default function AdvancedSearchForm() {
                               id="erledigung"
                               value={field.value || ""}
                             >
-                              <option value="">keine bestimmte Erledigung</option>
+                              <option value="">
+                                keine bestimmte Erledigung
+                              </option>
                               <option value="1">abgelehnt</option>
                               <option value="2">einstimmig angenommen</option>
                               <option value="3">mündlich zurückgezogen</option>
@@ -621,7 +625,7 @@ export default function AdvancedSearchForm() {
             <wm-accordion-heading id="heading-1">
               <h3>Person / Partei / Funktion / Rolle</h3>
             </wm-accordion-heading>
-            <wm-accordion-content className="mb-4! bg-white! border-2! border-transparent!">
+            <wm-accordion-content className="bg-white! border-2! border-transparent!">
               <div>
                 <div>
                   <div className="w-full flex flex-row items-end gap-4">
